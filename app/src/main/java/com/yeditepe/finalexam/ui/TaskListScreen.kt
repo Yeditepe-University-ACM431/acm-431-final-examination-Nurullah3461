@@ -44,3 +44,4 @@ fun TaskRow(task: Task, navController: NavController) {
         }
     )
 }
+
