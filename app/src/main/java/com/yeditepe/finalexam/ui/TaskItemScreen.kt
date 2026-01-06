@@ -20,7 +20,6 @@ import androidx.compose.ui.unit.dp
 fun TaskItemScreen() {
 
     // TODO 1: Create a mutable state to hold completion status (Boolean)
-    // Initial value should be false
     val isCompleted by remember { mutableStateOf(false) }
 
     Box(modifier = Modifier.fillMaxSize()) {
@@ -33,7 +32,6 @@ fun TaskItemScreen() {
             )
 
             // TODO 2: Show text "Completed" or "Not Completed"
-            // depending on completion state
             Text(
                 text = if (isCompleted) "Completed" else "Not Completed"
             )
